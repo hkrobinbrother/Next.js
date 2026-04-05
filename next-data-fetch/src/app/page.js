@@ -1,4 +1,5 @@
 import Image from "next/image";
+import FetchData from "./fetchData";
 
 export default function Home() {
   return (
@@ -6,6 +7,9 @@ export default function Home() {
       <h1 className="text-4xl font-bold text-gray-800 dark:text-gray-200">
         Welcome to Next.js 14!
       </h1>
+
+      <FetchData />
+      <h1>hello</h1>
     </div>
   );
 }
