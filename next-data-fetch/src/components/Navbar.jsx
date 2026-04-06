@@ -29,6 +29,9 @@ export default function Navbar() {
         <li>
           <Link href="/contact">Contact</Link>
         </li>
+        <li>
+          <Link href="/count">Count</Link>
+        </li>
       </ul>
     </nav>
   );
