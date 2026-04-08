@@ -32,6 +32,9 @@ export default function Navbar() {
         <li>
           <Link href="/count">Count</Link>
         </li>
+        <li>
+          <Link href="/design">Design</Link>
+        </li>
       </ul>
     </nav>
   );
