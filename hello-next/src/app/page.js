@@ -1,22 +1,28 @@
-import Image from "next/image";
+
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <h1 className="text-4xl font-bold text-gray-800 dark:text-white">
-        Welcome to Next.js 14!
-      </h1>
-      <p className="mt-4 text-gray-600 dark:text-gray-300">
-        This is a simple starter template for your Next.js 14 application.
-      </p>
-      <div className="mt-6">
-        <Image
-          src="/nextjs-logo.png"
-          alt="Next.js Logo"
-          width={200}
-          height={200}
-        />
+    <div className="relative w-full h-[800px] overflow-hidden">
+      
+      {/* 🎥 Background Video */}
+      <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="absolute top-0 left-0 w-full h-full object-cover"
+      >
+        <source src="/video1.mp4" type="video/mp4" />
+      </video>
+
+      {/* 🧱 Overlay (optional for dark effect) */}
+      <div className="absolute inset-0 bg-black/50"></div>
+
+      {/* 📝 Content */}
+      <div className="relative z-10 flex items-center justify-center h-full text-white">
+        <h1 className="text-4xl font-bold">Welcome to My Website</h1>
       </div>
+
     </div>
   );
 }
