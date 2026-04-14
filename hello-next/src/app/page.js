@@ -1,8 +1,11 @@
+import AboutPage from "@/component/about";
 
 
 export default function Home() {
   return (
-    <div className="relative w-full h-[800px] overflow-hidden">
+    <div>
+
+      <div className="relative w-full h-[800px] overflow-hidden">
       
       {/* 🎥 Background Video */}
       <video
@@ -16,7 +19,7 @@ export default function Home() {
       </video>
 
       {/* 🧱 Overlay (optional for dark effect) */}
-      <div className="absolute inset-0 bg-black/50"></div>
+      <div className="absolute inset-0 "></div>
 
       {/* 📝 Content */}
       <div className="relative z-10 flex items-center justify-center h-full text-white">
@@ -24,5 +27,12 @@ export default function Home() {
       </div>
 
     </div>
+    <AboutPage
+      />
+    <AboutPage
+      />
+    </div>
+    
+    
   );
 }
